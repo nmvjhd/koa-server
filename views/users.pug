@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    table.table.table-bordered
+        thead
+            tr
+                th name
+                th num
+        tbody
+            each item in data
+                tr
+                    td=item.name
+                    td=item.num
